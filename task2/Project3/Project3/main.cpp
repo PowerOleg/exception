@@ -23,8 +23,8 @@ int main(int argc, char** argv)
 	Triangle* tri = new Triangle(10, 20, 30, 50, 60, 70);
 	Right_triangle* right_tri = new Right_triangle(10, 20, 30, 31, 59, 90);
 	Isosceles_triangle* iso_tri = new Isosceles_triangle(10, 20, 10, 50, 80, 50);
-	//Equilateral_triangle* eq_tri = new Equilateral_triangle(30, 60);
-	//Quadrangle* quad = new Quadrangle(10, 20, 30, 40, 50, 60, 125, 125);
+	Equilateral_triangle* eq_tri = new Equilateral_triangle(10, 10, 10, 60, 60, 60);
+	Quadrangle* quad = new Quadrangle(10, 20, 30, 40, 50, 60, 125, 125);
 	//Rectangle* rectangle = new Rectangle(10, 20);
 	//Square* square = new Square(10);
 	//Parallelogram* parallelogram = new Parallelogram(10, 30, 150, 30);
@@ -36,10 +36,10 @@ int main(int argc, char** argv)
 	std::cout << std::endl;
 	print_info(iso_tri);
 	std::cout << std::endl;
-	//print_info(eq_tri);
-	//std::cout << std::endl;
-	//print_info(quad);
-	//std::cout << std::endl;
+	print_info(eq_tri);
+	std::cout << std::endl;
+	print_info(quad);
+	std::cout << std::endl;
 	//print_info(rectangle);
 	//std::cout << std::endl;
 	//print_info(square);
@@ -52,8 +52,8 @@ int main(int argc, char** argv)
 	delete tri;
 	delete right_tri;
 	delete iso_tri;
-	//delete eq_tri;
-	//delete quad;
+	delete eq_tri;
+	delete quad;
 	//delete rectangle;
 	//delete square;
 	//delete parallelogram;
