@@ -1,7 +1,12 @@
 #include "Triangle.h"
 
-Triangle::Triangle(int side_a, int side_b, int side_c, int angle_a, int angle_b, int angle_c)
+
+Triangle::Triangle(int side_a, int side_b, int side_c, int angle_a, int angle_b, int angle_c) try : angle_a(angle_a), angle_b(angle_b), angle_c(angle_c)
 {
+	if (angle_a + angle_b + angle_c != 180)
+	{
+		throw My_exception("Сумма углов должна быть равна 180 градусов");
+	}
 	this->sides = 3;
 	this->name = "Треугольник";
 	this->side_a = side_a;
@@ -10,7 +15,20 @@ Triangle::Triangle(int side_a, int side_b, int side_c, int angle_a, int angle_b,
 	this->angle_a = angle_a;
 	this->angle_b = angle_b;
 	this->angle_c = angle_c;
+	
+	
 }
+catch (std::exception e)
+{
+	std::cout << "Сумма углов должна быть равна 180 градусов!До свидания\n";
+}
+
+Triangle::~Triangle()
+{
+	//std::cout << "Triangle deleted";
+}
+
+
 
 void Triangle::print_side_values()
 {

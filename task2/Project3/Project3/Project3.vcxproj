@@ -131,6 +131,7 @@
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="Isosceles_triangle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="My_exception.cpp" />
     <ClCompile Include="Parallelogram.cpp" />
     <ClCompile Include="Quadrangle.cpp" />
     <ClCompile Include="Rectangle.cpp" />
@@ -143,6 +144,7 @@
     <ClInclude Include="Equilateral_triangle.h" />
     <ClInclude Include="Figure.h" />
     <ClInclude Include="Isosceles_triangle.h" />
+    <ClInclude Include="My_exception.h" />
     <ClInclude Include="Parallelogram.h" />
     <ClInclude Include="Quadrangle.h" />
     <ClInclude Include="Rectangle.h" />
