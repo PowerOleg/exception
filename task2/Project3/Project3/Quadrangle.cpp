@@ -1,6 +1,7 @@
 #include "Quadrangle.h"
 
-Quadrangle::Quadrangle(int side_a, int side_b, int side_c, int side_d, int angle_a, int angle_b, int angle_c, int angle_d) try : side_d(side_d), angle_d(angle_d)
+Quadrangle::Quadrangle(int side_a, int side_b, int side_c, int side_d, int angle_a, int angle_b, int angle_c, int angle_d) 
+try : side_d(side_d), angle_d(angle_d)
 {
 	
 	this->sides = 4;
